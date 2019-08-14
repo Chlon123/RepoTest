@@ -11,9 +11,13 @@ namespace MainProject
 			helloWorld = "Hello Worlds to Git!";
 		}
 		
-		public void ShowMainMessage()
+		public ShowMainMessage = () => Console.WriteLine(helloWorld);
+		
+		public ShowAllMessages(string message, Action secondMessage)
 		{
-			Console.WriteLine(helloWorld);
+			Console.WriteLine(message);
+			secondMessage;
+			Cosnole.ReadKey();
 		}
 	}		
 }
